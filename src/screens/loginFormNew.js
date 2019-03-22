@@ -98,7 +98,7 @@ export default class LoginNew extends Component {
             <View style={styles.loginform}>
             
             <Image style={{borderRadius:120,width:150,height:150}}    
-            source={require('../components/images/sample.jpg')}/>
+            source={require('../assets/images/sample.jpg')}/>
 
         <Text style={styles.logoWriteUp}>
            <Blink text="Welcome to Fundoo"/> 

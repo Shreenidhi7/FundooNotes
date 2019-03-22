@@ -106,14 +106,14 @@ const styles = StyleSheet.create({
 
 /****************************App.js(original)************************************************/
 
-{/*
+
 
 
 
 import React,{ Component } from "react";
 
-import { StyleSheet,View } from "react-native";
-import Container from './src/components/AppNavigator';
+import { StyleSheet,View,Text } from "react-native";
+import Container from './src/navigation/AppNavigator';
 
 
 export default class App extends Component {
@@ -121,8 +121,7 @@ export default class App extends Component {
     return(
       
       <View style={styles.container}>
-        
-        <Container/>  
+            <Container/>   
        
        </View>
     
@@ -145,87 +144,89 @@ const styles=StyleSheet.create({
     
 })
 
-*/}
+
 
 /******************************App.js(With Draw/App Navigator)******************************************************** */
 
 
 
 
-import React,{ Component } from "react";
+// import React,{ Component } from "react";
 
-import { StyleSheet,View,Text,SafeAreaView,ScrollView,Dimensions } from "react-native";
-import Container from './Fundoo/components/AppNavigator';
-//import DrawContainer from "./Fundoo/components/drawNavigator";
+// import { StyleSheet,View,Text,SafeAreaView,ScrollView,Dimensions } from "react-native";
+// import Container from './Fundoo/components/AppNavigator';
+// //import DrawContainer from "./Fundoo/components/drawNavigator";
 
-import HomeScreen from './Fundoo/screens/HomeScreen'
-import SettingsScreen from './Fundoo/screens/SettingsScreen'
+// import HomeScreen from './Fundoo/screens/HomeScreen'
+// import SettingsScreen from './Fundoo/screens/SettingsScreen'
 
-import { createDrawerNavigator,DrawerItems } from 'react-navigation';
+// import { createDrawerNavigator,DrawerItems } from 'react-navigation';
 
-const {width}=Dimensions.get('window')
+// const {width}=Dimensions.get('window')
 
-export default class App extends Component {
-  render() {
-    return(
-      <View>
-            <View style={styles.container}>
-              <AppDrawerNavigator/>
-            </View>
+// export default class App extends Component {
+//   render() {
+//     return(
+//       <View>
+//             <View style={styles.container}>
+//               <AppDrawerNavigator/>
+//             </View>
 
-      </View>
-    );
-  }
-}
+//       </View>
+//     );
+//   }
+// }
 
 
-const CustomDrawercomponent=(props)=>(
-  <SafeAreaView style={{flex:1}}>
-      <View style={{height:150,backgroundColor:'white',alignItems:'center',justifyContent:'center'}}>
-          <Image source={require('./images/sample.jpg')} style={{height:120,width:120,borderRadius:60}}/>
+// const CustomDrawercomponent=(props)=>(
+//   <SafeAreaView style={{flex:1}}>
+//       <View style={{height:150,backgroundColor:'white',alignItems:'center',justifyContent:'center'}}>
+//           <Image source={require('./images/sample.jpg')} style={{height:120,width:120,borderRadius:60}}/>
       
-      </View>
+//       </View>
       
-      <ScrollView>
-       <DrawerItems {...props} />
-      </ScrollView>
+//       <ScrollView>
+//        <DrawerItems {...props} />
+//       </ScrollView>
   
   
-  </SafeAreaView>
-)
+//   </SafeAreaView>
+// )
 
 
 
 
 
 
-//naavigator alli madodu idu//
+// //naavigator alli madodu idu//
 
 
 
 
-const AppDrawerNavigator=createDrawerNavigator({
-  HomeScreen:{screen:HomeScreen},  /*HomeScreen:HomeScreen*/
-  SettingsScreen:{screen:SettingsScreen}  /*SettingsScreen:SettingsScreen*/
-},{
-    contentComponent:CustomDrawercomponent,
-  drawerWidth: width, 
-  contentOptions:{
-      activeTintColor:'orange'
-  }
-})
+// const AppDrawerNavigator=createDrawerNavigator({
+//   HomeScreen:{screen:HomeScreen},  /*HomeScreen:HomeScreen*/
+//   SettingsScreen:{screen:SettingsScreen}  /*SettingsScreen:SettingsScreen*/
+// },{
+//     contentComponent:CustomDrawercomponent,
+//   drawerWidth: width, 
+//   contentOptions:{
+//       activeTintColor:'orange'
+//   }
+// })
 
-//const DrawContainer=createAppContainer(AppDrawerNavigator)
-//export default  DrawContainer
+// //const DrawContainer=createAppContainer(AppDrawerNavigator)
+// //export default  DrawContainer
 
-const styles=StyleSheet.create({
+// const styles=StyleSheet.create({
 
 
-  container:{
-    flex:1,
-   // alignItems:'center',
-    //justifyContent:'center',
-    //backgroundColor:'#206bad'
-  },
+//   container:{
+//     flex:1,
+//    // alignItems:'center',
+//     //justifyContent:'center',
+//     //backgroundColor:'#206bad'
+//   },
     
-})
+// })
+
+/****************************************************************************************** */

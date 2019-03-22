@@ -1,10 +1,12 @@
+
+
 // import React,{ Component } from "react";
 
 // import {StyleSheet,View,Text,DrawerLayoutAndroid,Image} from 'react-native';
 // var navigationView = (
 //     <View style={{flex: 1, backgroundColor: '#fff'}}>
 //     <Image style={{borderRadius:120,alignSelf:'center',justifyContent:'center',width:80,height:80}}    
-//     source={require('../components/images/sample.jpg')}/>
+//     source={require('../assets/images/sample.jpg')}/>
 //       <Text style={{margin: 10,
 //          fontSize: 25,
 //           textAlign: 'left',
@@ -34,49 +36,49 @@
 //                     borderBottomWidth:3}}>Welcome to Fundoo Dashboard </Text>
 //               </View>
              
-  
-
-
-
 //             </DrawerLayoutAndroid>
 //           );
+//                 }
+//             }
+
+/***************************************************************************************** */        
+
+
+
+import React,{ Component } from "react";
+
+import { StyleSheet,View,Text } from "react-native";
+
+import HomeScreen from "../screens/HomeScreen"
+import DrawerNavigator from "../navigation/DrawerNavigator"
+
 export default class Dashboard extends Component {
 
 static navigationOptions={header:null}
 render() {       
         return(
-            <View style={styles.container}>
-
-                               
-                <Text style={styles.writeUp}>
-
-                    Hii Welcome to Dashboard
+            <View style={styles.container}>       
                 
-
-                </Text>
-            
-            
+                <DrawerNavigator/>
+                
             </View>
         )
     }
  }
 
-
-
-
-
 const styles=StyleSheet.create({
      container:{
             flex:1,
-            paddingVertical:30,
+           // paddingVertical:30,
             alignItems:'center',
             justifyContent:'center',
-            backgroundColor:  "#206bad",
+           // backgroundColor:  "#206bad",
+           backgroundColor:'#fff'
      },
 
      writeUp:{
          color:"black",
-         fontSize:25,
+         fontSize:30,
          fontWeight:'bold'
      }
 
