@@ -10,7 +10,7 @@ render() {
         return(
             <View style={styles.container}>       
                 <Text style={styles.writeUp}>
-                    LINK
+                    LINKS
                 </Text>
             </View>
         )

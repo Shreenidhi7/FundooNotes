@@ -113,16 +113,18 @@ const styles = StyleSheet.create({
 import React,{ Component } from "react";
 
 import { StyleSheet,View,Text } from "react-native";
-import Container from './src/navigation/AppNavigator';
+//import Container from './src/navigation/AppNavigator';
+//import { DrawerNavigator } from "react-navigation";
 
+import DrawerNavigator from './src/navigation/DrawerNavigator'
 
 export default class App extends Component {
   render() {
     return(
       
       <View style={styles.container}>
-            <Container/>   
-       
+           {/* <Container/>   */}
+          <DrawerNavigator/>
        </View>
     
       
@@ -140,6 +142,7 @@ const styles=StyleSheet.create({
    // alignItems:'center',
     //justifyContent:'center',
     //backgroundColor:'#206bad'
+    backgroundColor:'#fff'
   },
     
 })
